@@ -1,0 +1,10 @@
+export const TIMER = {
+  START: 'TIMER/START',
+  SET: 'TIMER/SET/ID',
+  TICK: 'TIMER/TICK',
+  END: 'TIMER/END',
+  STATUS: {
+    WORKING: 'WORKING',
+    UNWORKING: 'UNWORKING',
+  },
+};
