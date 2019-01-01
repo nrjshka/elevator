@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
-import './App.css';
+import { Elevator, Panel } from '../index';
 
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className="elevator-container">
+        <Elevator />
+        <Panel />
       </div>
     );
   }

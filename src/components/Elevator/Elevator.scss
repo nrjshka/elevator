@@ -1,0 +1,11 @@
+.elevator {
+  width: 300px;
+  margin-left: calc(50% - 150px);
+  padding: 40px 40px 0;
+  background: linear-gradient(to bottom, #253852 0%, #3f6679 55%, #253852 84%, #3f6679 100%); 
+
+  &-container {
+    display: flex;
+    padding-top: 25%;
+  }
+}

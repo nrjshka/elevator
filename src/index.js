@@ -7,7 +7,7 @@ import storeInitialValue from './const/store';
 import reducers from './reducers';
 import middlewares from './middlewares'
 import './index.css';
-import App from './components/App/index';
+import { App } from './components/';
 import * as serviceWorker from './serviceWorker';
 
 const store = createStore(
