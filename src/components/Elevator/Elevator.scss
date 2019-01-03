@@ -1,4 +1,5 @@
 .elevator {
+  position: relative;
   width: 300px;
   margin-left: calc(50% - 150px);
   padding: 40px 40px 0;
@@ -7,5 +8,17 @@
   &-container {
     display: flex;
     padding-top: 25%;
+  }
+
+  &__floor {
+    position: absolute;
+    top: 10px;
+    left: calc(50% - 25px);
+    border: #406277 3px solid;
+    width: 50px;
+    height: 20px;
+    color: #C5E13A;
+    background-color: black;
+    text-align: center;
   }
 }
