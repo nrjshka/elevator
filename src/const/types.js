@@ -8,3 +8,11 @@ export const TIMER = {
     UNWORKING: 'UNWORKING',
   },
 };
+
+export const ELEVATOR = {
+  MOVING_TO: {
+    TOP: 'ELEVATOR/MOVING_TO/TOP',
+    BOTTOM: 'ELEVATOR/MOVING_TO/BOTTOM',
+    STAYING: 'ELEVATOR/MOVING_TO/STAYING',
+  }
+};

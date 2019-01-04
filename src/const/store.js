@@ -1,4 +1,4 @@
-import { TIMER } from './types';
+import { TIMER, ELEVATOR } from './types';
 
 export const timer = {
   status: TIMER.STATUS.UNWORKING,
@@ -8,6 +8,8 @@ export const timer = {
 export const elevator = {
   floorCount: 5,
   currentFloor: 1,
+  isOpen: false,
+  movingTo: ELEVATOR.MOVING_TO.STAYING,
 };
 
 
