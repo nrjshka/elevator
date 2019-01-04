@@ -17,5 +17,10 @@ export const ELEVATOR = {
   },
   FLOOR: {
     CLICK: 'ELEVATOR/FLOOR/CLICK',
-  }
+  },
+  CHANGE_STATUS: 'ELEVATOR/CHANGE_STATUS',
+};
+
+export const QUEUE = {
+  ADD: 'QUEUE/ADD',
 };
