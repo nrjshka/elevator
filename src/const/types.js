@@ -10,6 +10,7 @@ export const TIMER = {
 };
 
 export const ELEVATOR = {
+  MOVE: 'ELEVATOR/MOVE',
   MOVING_TO: {
     TOP: 'ELEVATOR/MOVING_TO/TOP',
     BOTTOM: 'ELEVATOR/MOVING_TO/BOTTOM',
@@ -18,9 +19,14 @@ export const ELEVATOR = {
   FLOOR: {
     CLICK: 'ELEVATOR/FLOOR/CLICK',
   },
+  DOORS: {
+    OPEN: 'ELEVATOR/DOORS/OPEN',
+    CLOSE: 'ELEVATOR/DOORS/CLOSE',
+  },
   CHANGE_STATUS: 'ELEVATOR/CHANGE_STATUS',
 };
 
 export const QUEUE = {
   ADD: 'QUEUE/ADD',
+  DELETE: 'QUEUE/DELETE',
 };

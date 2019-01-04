@@ -11,6 +11,25 @@ export default (state = elevator, action) => {
         movingTo: status,
       }
     }
+    case ELEVATOR.MOVE: {
+      const { currentFloor } = state;
+      const { floor } = action;
+
+      return {
+        ...state,
+        currentFloor: currentFloor + floor,
+      }
+    }
+    case ELEVATOR.DOORS.OPEN:
+      return {
+        ...state,
+        isOpen: true,
+      };
+    case ELEVATOR.DOORS.CLOSE:
+      return {
+        ...state,
+        isOpen: false,
+      };
     default:
       break;
   }

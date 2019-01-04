@@ -6,12 +6,15 @@ import { floorPanelOnClick } from '../../actions';
 
 const mapStateToPropsFactory = dispatch => {
   let result = {};
-  return ({ elevator }, ownProps) => {
+  return ({ elevator, queue }, ownProps) => {
     const { floorCount } = elevator;
 
     const floorArr = [];
     for (let i = 1; i <= floorCount; i++) {
-      floorArr.push(i);
+      floorArr.push({
+        value: i,
+        isActive: queue.includes(i),
+      });
     }
 
     const stateProps = {

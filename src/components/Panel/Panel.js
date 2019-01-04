@@ -1,4 +1,6 @@
 import React from 'react';
+import classNames from 'classnames';
+
 import './Panel.scss';
 
 export default ({
@@ -7,10 +9,13 @@ export default ({
 }) => (
     <div className="panel">
       <div className="panel__content">
-        {floorArr.map(floor => (
-          <div className="panel__content-btn" onClick={onClick(floor)}>
-            <button className="panel__content-btn-content">
-              {floor}
+        {floorArr.map(({ value, isActive }) => (
+          <div className="panel__content-btn" onClick={onClick(value)}>
+            <button className={classNames("panel__content-btn-content",
+              isActive && "panel__content-btn-content--active"
+            )}
+            >
+              {value}
             </button>
           </div>
         ))}

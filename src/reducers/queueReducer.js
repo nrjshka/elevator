@@ -1,3 +1,5 @@
+import { isEmpty } from 'ramda';
+
 import { QUEUE } from '../const/types';
 
 export default (state = [], action) => {
@@ -13,6 +15,16 @@ export default (state = [], action) => {
         ...state,
         floor,
       ];
+    }
+    case QUEUE.DELETE: {
+      const { floor } = action;
+      const queue = [...state];
+
+      if (!isEmpty(queue)) {
+        const floorId = queue.indexOf(floor);
+        queue.splice(floorId, 1);
+      }
+      return queue;
     }
     default:
       break;
