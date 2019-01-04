@@ -1,10 +1,3 @@
-import React from 'react';
-import './Elevator.scss';
+import ElevatorContainer from './ElevatorContainer'
 
-export default () => (
-  <div className="elevator">
-    <div className="elevator__floor">
-      3
-    </div>
-  </div>
-);
+export default ElevatorContainer;

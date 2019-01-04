@@ -21,4 +21,42 @@
     background-color: black;
     text-align: center;
   }
+
+  &__people {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    padding-top: 3px;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      background: linear-gradient(to bottom, #253852 0%, #3f6679);
+      transition: all 0.5s linear; 
+      z-index: 2;
+      width: 50%;
+      height: 100%;
+      top: 0;
+    }
+
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      right: 0;
+    }
+
+    &-img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &--open &__people {
+    &::before, &::after {
+      width: 0;
+    }
+  }
 }

@@ -1,7 +1,3 @@
-import React from 'react';
-import './Panel.scss';
+import PanelContainer from './PanelContainer';
 
-export default () => (
-  <div className="panel">
-  </div>
-);
+export default PanelContainer;
