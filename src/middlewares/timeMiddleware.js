@@ -3,7 +3,7 @@ import { TIMER, ELEVATOR, QUEUE } from '../const/types';
 export default store => next => action => {
   switch (action.type) {
     case TIMER.START: {
-      const timerId = setInterval(() => store.dispatch({ type: TIMER.TICK }), 500);
+      const timerId = setInterval(() => store.dispatch({ type: TIMER.TICK }), 1000);
       store.dispatch({ type: TIMER.SET, data: timerId });
       break;
     }
